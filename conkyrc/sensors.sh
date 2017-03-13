@@ -1,6 +1,6 @@
 #!/bin/bash
-cpu=$(sensors | grep "Core 1:" | cut -c17-20)
-graphic=$(sensors | grep id | cut -c17-20)
+cpu=$(sensors | grep "Core 1:" | cut -c17-18)
+graphic=$(sensors | grep id | cut -c17-18)
 max_cpu=50
 
 if [[ "$cpu" -ge $max_cpu ]]; then 
