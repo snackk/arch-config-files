@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Conky
-Exec=conky -c /home/$USER/git/config-files/conkyrc/conkyrc
+Exec=conky -c $HOME/git/config-files/conkyrc/conkyrc
 Icon=tilda
 Terminal=false
 Type=Application

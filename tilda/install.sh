@@ -1,4 +1,4 @@
-rm /home/$USER/.config/tilda/config_0
-rm /home/$USER/.config/autostart/Tilda.desktop
-ln -s /home/$USER/git/config-files/tilda/tilda_config /home/$USER/.config/tilda/config_0
-ln -s /home/$USER/git/config-files/tilda/Tilda.desktop /home/$USER/.config/autostart/Tilda.desktop
+rm $HOME/.config/tilda/config_0
+rm $HOME/.config/autostart/Tilda.desktop
+ln -s $HOME/git/config-files/tilda/tilda_config $HOME/.config/tilda/config_0
+ln -s $HOME/git/config-files/tilda/Tilda.desktop $HOME/.config/autostart/Tilda.desktop
