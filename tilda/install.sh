@@ -1,0 +1,1 @@
+ln -s /home/$USER/git/config-files/tilda/tilda_config /home/$USER/.config/tilda/config_0
