@@ -37,6 +37,7 @@ alias pacman_new='find / -regextype posix-extended -regex ".+\.pac(new|save|orig
 #GITHUB
 alias git_setup_user='git config --global user.name "snackk"'
 alias git_setup_password='git config --global user.email santos_matrix@sapo.pt'
+alias git_setup_timeout='git config --global credential.helper 'cache --timeout=3600''
 alias git_list='git config --list'
 
 #UTILS
