@@ -1,0 +1,1 @@
+ln -s /home/$USER/git/config-files/bashrc/bashrc /home/$USER/.bashrc
