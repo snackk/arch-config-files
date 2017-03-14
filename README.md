@@ -5,3 +5,5 @@ Install config files:
   
 Remove config files:
   make remove
+  
+  Written by Diogo Santos.
