@@ -1,2 +1,2 @@
 #!/bin/bash
-(sleep 10 && tilda)
+(sleep 10 && tilda)&

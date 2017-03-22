@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Tilda
-Exec=/usr/bin/tilda
+Exec=/home/snackk/git/config-files/tilda/tilda_transparency.sh
 Icon=tilda
 Terminal=false
 Type=Application
