@@ -25,7 +25,8 @@ alias ls='ls -l --color'
 alias owncloud='ssh -p 1337 pi@owncloud.flnet.org'
 alias owncloud_temp='ssh -p 1337 pi@owncloud.flnet.org "/opt/vc/bin/vcgencmd measure_temp"'
 alias sigma='ssh ist173972@sigma.ist.utl.pt'
-alias ssh_generate='ssh-keygen -t rsa'
+alias generate_assymetric_keys='ssh-keygen -t rsa'
+alias aws='ssh -i /home/snackk/Downloads/aws-machine.pem ec2-user@35.167.255.219'
 
 #PACMAN
 alias pacman_orphans='pacman -Qdt'
@@ -53,3 +54,5 @@ alias cleanHistory='rm $HISTFILE'
 #Compiladores
 export CVSROOT=":ext:ist173972@sigma.ist.utl.pt:/afs/ist.utl.pt/groups/leic-co/co17/cvs/73972"
 export CVS_RSH=ssh
+
+alsi --color1=blue --color2=black -a
