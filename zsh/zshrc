@@ -26,7 +26,9 @@ alias owncloud='ssh -p 1337 pi@owncloud.flnet.org'
 alias owncloud_temp='ssh -p 1337 pi@owncloud.flnet.org "/opt/vc/bin/vcgencmd measure_temp"'
 alias sigma='ssh ist173972@sigma.ist.utl.pt'
 alias generate_assymetric_keys='ssh-keygen -t rsa'
-alias aws='ssh -i /home/snackk/Downloads/aws-machine.pem ec2-user@35.167.255.219'
+alias aws_lb='ssh -i /home/snackk/Downloads/aws-machine.pem ec2-user@ec2-52-36-183-140.us-west-2.compute.amazonaws.com'
+alias aws_fw='ssh -i /home/snackk/Downloads/aws-machine.pem ec2-user@ec2-52-34-139-224.us-west-2.compute.amazonaws.com'
+
 
 #PACMAN
 alias pacman_orphans='pacman -Qdt'
