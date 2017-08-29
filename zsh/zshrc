@@ -38,8 +38,8 @@ alias pacman_remove_orphans='sudo pacman -Rns $(pacman -Qtdq)'
 alias pacman_new='find / -regextype posix-extended -regex ".+\.pac(new|save|orig)" 2> /dev/null'
 
 #GITHUB
-alias git_setup_user='git config --global user.name "snackk"'
-alias git_setup_password='git config --global user.email santos_matrix@sapo.pt'
+alias git_setup_name='git config --global user.name "snackk"'
+alias git_setup_email='git config --global user.email "santos_matrix@sapo.pt"'
 alias git_setup_timeout='git config --global credential.helper 'cache --timeout=3600''
 alias git_list='git config --list'
 
@@ -49,12 +49,5 @@ alias checkProblems='journalctl -p 0..3 -xn'
 alias flushdns='sudo nscd -K && nscd'
 alias wired='sudo iplink set enp8s0 up && sudo dhcpd enp8s0'
 alias cleanHistory='rm $HISTFILE'
-
-#PS1
-#PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[1;31m\]\u'; else echo '\[\033[1;30m\]\u\[\033[1;31m\]@\[\033[1;37m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[1;37m\]\w\[\033[0;37m\]]\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
-
-#Compiladores
-export CVSROOT=":ext:ist173972@sigma.ist.utl.pt:/afs/ist.utl.pt/groups/leic-co/co17/cvs/73972"
-export CVS_RSH=ssh
 
 alsi --color1=blue --color2=black -a
