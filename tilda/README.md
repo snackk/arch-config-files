@@ -1,11 +1,15 @@
-# config-files
+# tilda
+
+### Description
+
+My personal configs for the dropdown terminal tilda.
 
 ### Installation
 
-My zsh theme is based on [agnoster](https://github.com/agnoster/agnoster-zsh-theme), to run it smoothly just install the dependencies.
-
+To install ONLY this config file:
 ```sh
 $ git https://github.com/snackk/config-files
+$ cd tilda
 $ ./install.sh && echo "Enjoy :)"
 ```
 Any problem with install just run:
