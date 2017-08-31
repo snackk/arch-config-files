@@ -25,10 +25,11 @@ conky.config = {
     color2 = 'e0e0e0',  --White
     color3 = 'ff1a1a',  --Red
     use_xft = true,
-    font = 'DejaVu:Book:size=7',
-    override_utf8_locale = true 
+    font = 'Noto:Regular:size=7',
+    override_utf8_locale = true,
+    uppercase = true
 }
 
 conky.text = [[
-${alignc}${execpi 60 sh $HOME/git/config-files/conkyrc/battery.sh}  ${execpi 60 sh $HOME/git/config-files/conkyrc/time.sh}  ${color1}>>${color}  KERNEL ${color1}$kernel${color}  ${color1}>>${color}  CPU ${color2}$cpu%  $freq MHz${color}  RAM ${color2}${memperc}%${color}  DISK ${color2}${fs_used_perc /}%${color}  ${color1}>>${color}  ${execpi 60 sh $HOME/git/config-files/conkyrc/sensors.sh}  ${color1}>>${color}  WIFY ${color2}${wireless_essid wlp7s0}  ${wireless_link_qual_perc wlp7s0}%${color}  ${color1}>>${color}  ${execpi 1800 sh $HOME/git/config-files/conkyrc/raspberry_temp.sh}${alignc}
+${alignc}${execpi 60 sh $HOME/git/config-files/conky/battery.sh}  ${execpi 60 sh $HOME/git/config-files/conky/time.sh}  ${color1}>>${color}  KERNEL ${color1}$kernel${color}  ${color1}>>${color}  CPU ${color2}$cpu%  $freq MHz${color}  RAM ${color2}${memperc}%${color}  DISK ${color2}${fs_used_perc /}%${color}  ${color1}>>${color}  ${execpi 60 sh $HOME/git/config-files/conky/sensors.sh}  ${color1}>>${color}  WIFY ${color2}${wireless_essid wlp7s0}  ${wireless_link_qual_perc wlp7s0}%${color}  ${color1}>>${color}  ${execpi 1800 sh $HOME/git/config-files/conky/raspberry_temp.sh}${alignc}
 ]]
