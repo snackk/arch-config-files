@@ -23,7 +23,9 @@ alias ls='ls -l --color'
 
 #SSH CONNECTIONS
 alias owncloud='ssh -p 1337 pi@owncloud.flnet.org'
+alias mark1='ssh -p 1337 pi@mark1.darktech.org'
 alias owncloud_temp='ssh -p 1337 pi@owncloud.flnet.org "/opt/vc/bin/vcgencmd measure_temp"'
+alias mark1_temp='ssh -p 1337 pi@owncloud.flnet.org "/opt/vc/bin/vcgencmd measure_temp"'
 alias sigma='ssh ist173972@sigma.ist.utl.pt'
 alias generate_assymetric_keys='ssh-keygen -t rsa'
 alias aws_lb='ssh -i /home/snackk/Downloads/aws-machine.pem ec2-user@ec2-52-36-183-140.us-west-2.compute.amazonaws.com'
