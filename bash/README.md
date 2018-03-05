@@ -8,7 +8,7 @@ My personal configs for bash shell.
 
 To install ONLY this config file:
 ```sh
-$ git https://github.com/snackk/config-files
+$ git https://github.com/snackk/arch-config-files
 $ cd bashrc
 $ ./install.sh && echo "Enjoy :)"
 ```

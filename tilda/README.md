@@ -8,7 +8,7 @@ My personal configs for the dropdown terminal tilda.
 
 To install ONLY this config file:
 ```sh
-$ git https://github.com/snackk/config-files
+$ git https://github.com/snackk/arch-config-files
 $ cd tilda
 $ ./install.sh && echo "Enjoy :)"
 ```

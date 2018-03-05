@@ -10,7 +10,7 @@ There are 2 separated configs for conky:
 
 To install ONLY this config file:
 ```sh
-$ git https://github.com/snackk/config-files
+$ git https://github.com/snackk/arch-config-files
 $ cd conkyrc
 $ ./install.sh && echo "Enjoy :)"
 ```

@@ -12,7 +12,7 @@ My zsh theme is based on [agnoster](https://github.com/agnoster/agnoster-zsh-the
 
 To install ONLY this config file:
 ```sh
-$ git https://github.com/snackk/config-files
+$ git https://github.com/snackk/arch-config-files
 $ cd zsh
 $ ./install.sh && echo "Enjoy :)"
 ```
