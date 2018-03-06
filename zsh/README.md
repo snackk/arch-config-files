@@ -20,6 +20,6 @@ $ chmod +x install.sh
 
 ### Snackster Theme
 
-My zsh theme is based on [agnoster](https://github.com/agnoster/agnoster-zsh-theme). You'll need to install a few things in order to run it properly, you can find these dependencies on the *agnoster*.
+My zsh theme is based on *agnoster*. You'll need to install a few things in order to run it properly, you can find these dependencies on the [agnoster page](https://github.com/agnoster/agnoster-zsh-theme).
   
   Written by [@snackk](https://github.com/snackk)
