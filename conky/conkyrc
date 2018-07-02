@@ -8,8 +8,8 @@ conky.config = {
     own_window_class = 'override',
     own_window_argb_visual = true,
    
-    minimum_width = 1366,
-    minimum_height = 11,       
+    minimum_width = 1920,
+    minimum_height = 16,       
     draw_outline = false,
     draw_shades = false,    
     border_width = 0,
