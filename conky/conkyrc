@@ -4,7 +4,7 @@ conky.config = {
     own_window = true,    
     own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager',
     own_window_transparent = true,  
-    own_window_type = 'conky',
+    own_window_type = 'panel',
     own_window_class = 'override',
     own_window_argb_visual = true,
    
