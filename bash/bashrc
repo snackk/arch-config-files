@@ -5,13 +5,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+#ALIAS SECTION
+
+alias ls='ls -l --color'
+alsi --color1=blue --color2=black -a
 
 #SSH CONNECTIONS
-alias owncloud='ssh -p 1337 pi@owncloud.flnet.org'
-alias owncloud_temp='ssh -p 1337 pi@owncloud.flnet.org "/opt/vc/bin/vcgencmd measure_temp"'
+alias snackkdrive='ssh -p 1337 pi@snackkdrive.ddns.net'
 alias sigma='ssh ist173972@sigma.ist.utl.pt'
-alias ssh_generate='ssh-keygen -t rsa'
+alias generate_assymetric_keys='ssh-keygen -t rsa'
 
 #PACMAN
 alias pacman_orphans='pacman -Qdt'
@@ -21,16 +23,17 @@ alias pacman_remove_orphans='sudo pacman -Rns $(pacman -Qtdq)'
 alias pacman_new='find / -regextype posix-extended -regex ".+\.pac(new|save|orig)" 2> /dev/null'
 
 #GITHUB
-alias git_setup_user='git config --global user.name "snackk"'
-alias git_setup_password='git config --global user.email santos_matrix@sapo.pt'
+alias git_setup_name='git config --global user.name "snackk"'
+alias git_setup_email='git config --global user.email "snackk026@gmail.com"'
+alias git_setup_timeout='git config --global credential.helper 'cache --timeout=3600''
 alias git_list='git config --list'
 
 #UTILS
-alias generate_lostFiles='lostfiles > ~/Downloads/LostFiles.txt'
-alias checkProblems='journalctl -p 0..3 -xn'
+alias generate_lost_files='lostfiles > ~/Downloads/LostFiles.txt'
+alias check_problems='journalctl -p 0..3 -xn'
 alias flushdns='sudo nscd -K && nscd'
 alias wired='sudo iplink set enp8s0 up && sudo dhcpd enp8s0'
-alias cleanHistory='history -c && cat /dev/null > .bash_history'
+alias clean_history='history -c && cat /dev/null > .bash_history'
 
 #PS1
 PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[1;31m\]\u'; else echo '\[\033[1;30m\]\u\[\033[1;31m\]@\[\033[1;37m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[1;37m\]\w\[\033[0;37m\]]\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"

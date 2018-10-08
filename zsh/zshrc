@@ -20,15 +20,12 @@ source $ZSH/oh-my-zsh.sh
 #ALIAS SECTION
 
 alias ls='ls -l --color'
+alsi --color1=blue --color2=black -a
 
 #SSH CONNECTIONS
-alias owncloud='ssh -p 1337 pi@owncloud.flnet.org'
-alias mark1='ssh -p 1337 pi@mark1.darktech.org'
-alias owncloud_temp='ssh -p 1337 pi@owncloud.flnet.org "/opt/vc/bin/vcgencmd measure_temp"'
-alias mark1_temp='ssh -p 1337 pi@mark1.darktech.org "/opt/vc/bin/vcgencmd measure_temp"'
+alias snackkdrive='ssh -p 1337 pi@snackkdrive.ddns.net'
 alias sigma='ssh ist173972@sigma.ist.utl.pt'
 alias generate_assymetric_keys='ssh-keygen -t rsa'
-
 
 #PACMAN
 alias pacman_orphans='pacman -Qdt'
@@ -39,15 +36,13 @@ alias pacman_new='find / -regextype posix-extended -regex ".+\.pac(new|save|orig
 
 #GITHUB
 alias git_setup_name='git config --global user.name "snackk"'
-alias git_setup_email='git config --global user.email "santos_matrix@sapo.pt"'
+alias git_setup_email='git config --global user.email "snackk026@gmail.com"'
 alias git_setup_timeout='git config --global credential.helper 'cache --timeout=3600''
 alias git_list='git config --list'
 
 #UTILS
-alias generate_lostFiles='lostfiles > ~/Downloads/LostFiles.txt'
-alias checkProblems='journalctl -p 0..3 -xn'
+alias generate_lost_files='lostfiles > ~/Downloads/LostFiles.txt'
+alias check_problems='journalctl -p 0..3 -xn'
 alias flushdns='sudo nscd -K && nscd'
 alias wired='sudo iplink set enp8s0 up && sudo dhcpd enp8s0'
-alias cleanHistory='rm $HISTFILE'
-
-alsi --color1=blue --color2=black -a
+alias clean_history='rm $HISTFILE'
