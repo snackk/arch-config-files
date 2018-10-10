@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Conky
 Exec=/usr/bin/conky -c /home/snackk/git/arch-config-files/conky/conkyrc
-Icon=tilda
+Icon=conky
 Terminal=false
 Type=Application
 Categories=GNOME;GTK;System;Utility;TerminalEmulator;
