@@ -11,6 +11,8 @@ else
 	print_label_string_color2 "CPU " "$(echo $cpu_temp)ºC "
 fi	
 
+print_label_string_color1 "" " "	#nasty hack, used to add +1 space between cpu and grapics
+
 if [[ "$graphic_temp" -ge $MAX_TEMP_THRESHOLD ]]; then 
 	print_label_string_color1 " GRAPHICS " "$(echo $graphic_temp)ºC"
 else
