@@ -1,14 +1,18 @@
 #!/bin/bash
-cpu=$(sensors | grep "Core 1:" | cut -c17-18)
-graphic=$(sensors | grep id | cut -c17-18)
-max_cpu=50
 
-if [[ "$cpu" -ge $max_cpu ]]; then 
-	echo -n "CPU "'${color2}'$cpu'${color}${color2}'"ºC"'${color}'
-else echo -n "CPU "'${color2}'$cpu"ºC"'${color}'
+source $HOME/git/arch-config-files/conky/conky_utils.conf
+
+cpu_temp=$(sensors | grep "Core 1:" | cut -c17-18)
+graphic_temp=$(sensors | grep id | cut -c17-18)
+
+if [[ "$cpu_temp" -le $MAX_TEMP_THRESHOLD ]]; then 
+	print_label_string_color1 "CPU " "$(echo $cpu_temp)ºC "
+else
+	print_label_string_color2 "CPU " "$(echo $cpu_temp)ºC "
 fi	
 
-if [[ "$graphic" -ge $max_cpu ]]; then 
-	echo -n "  GRAPHICS "'${color2}'$graphic'${color}${color2}'"ºC"'${color}'
-else echo -n "  GRAPHICS "'${color2}'$graphic"ºC"'${color}'
+if [[ "$graphic_temp" -le $MAX_TEMP_THRESHOLD ]]; then 
+	print_label_string_color1 " GRAPHICS " "$(echo $graphic_temp)ºC"
+else
+	print_label_string_color2 " GRAPHICS " "$(echo $graphic_temp)ºC"
 fi	
