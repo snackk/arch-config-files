@@ -6,9 +6,10 @@ batt=$(acpi | grep Battery)
 batt_dis=$(echo $batt | cut -c12-22)
 batt_full=$(echo $batt | cut -c12-15)
 batt_perc=$(echo $batt | cut -c25-26)
-batt_dis_zero_rate=$(echo $batt | cut -c45-48)
+batt_dis_zero_rate_less=$(echo $batt | cut -c45-48)
+batt_dis_zero_rate_more=$(echo $batt | cut -c46-49)
 
-if [ "$batt_dis_zero_rate" == "zero" ]; then
+if [ "$batt_dis_zero_rate_less" == "zero" ] || [ "$batt_dis_zero_rate_more" == "zero" ]; then
 	print_label_string_color1 "BATTERY " "CHARGED"
 else
 	if [ "$batt_dis" == "Discharging" ]; then
