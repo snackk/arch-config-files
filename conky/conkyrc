@@ -25,7 +25,7 @@ conky.config = {
     color2 = 'e0e0e0',  --LightGrey
     color3 = 'ff1a1a',  --Red
     use_xft = true,
-    font = 'Noto Mono for Powerline:Regular:size=8',
+    font = 'Hack:Regular:size=8',
     override_utf8_locale = true,
     uppercase = true
 }
